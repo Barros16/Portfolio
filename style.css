@@ -122,6 +122,8 @@ html{
     background-color: #1CB698;
 }
 
+/* SECCIÓN SOBRE MI */
+
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -136,8 +138,8 @@ html{
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-
 }
+
 .sobremi .contenido-seccion p{
     font: 18px;
     line-height: 22px;
@@ -238,4 +240,120 @@ html{
 
 .sobremi button:hover .overlay{
     width: 100%;
+}
+
+/* SECCIÓN CONOCIMIENTOS */
+.skills {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.skills .contenido-seccion {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills h2 {
+    font-size: 42px;
+    font-family: 'Righteous';
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skills .fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.skills .col {
+    width: 48%;
+    padding: 0 15px;
+}
+
+.skills .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.skills .skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills .skills-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #1e2326;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    height: 70px;
+}
+
+.skills .skills-list li span {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    flex: 1;
+}
+
+.skills-list i {
+    font-size: 40px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px; 
+    text-align: center;
+    line-height: 50px;
+}
+
+.skills .skills-list li:hover {
+    background-color: #FF6F61;
+    color: #fff;
+}
+
+.skills .skills-list li img, 
+.skills .skills-list li i {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.skills .skills-list li:hover img,
+.skills .skills-list li:hover i {
+    transform: scale(1.1);
+}
+
+.skills .skills-list li span {
+    font-size: 20px;
+    font-family: 'Righteous';
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .skills .fila {
+        flex-direction: column;
+    }
+
+    .skills .col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
