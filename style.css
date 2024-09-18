@@ -312,7 +312,7 @@ html{
 
 .skills-list i {
     font-size: 40px;
-    margin-right: 20px;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,7 +329,7 @@ html{
 
 .skills .skills-list li img, 
 .skills .skills-list li i {
-    width: 50px;
+    width: 65px;
     height: 50px;
     margin-right: 20px;
     display: inline-block;
@@ -631,6 +631,7 @@ html{
 
 .contacto .col .info{
     position: absolute;
+    width: 100%;
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
@@ -646,7 +647,6 @@ html{
 .contacto .col .info ul li{
     margin-bottom: 20px;
 }
-
 .contacto .col .info ul li i{
     color: #1CB698;
     display: inline-block;
