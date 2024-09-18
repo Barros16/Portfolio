@@ -554,6 +554,14 @@ html{
     margin-bottom: 0px;
 }
 
+.proyecto img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.proyecto:hover img {
+    transform: scale(1.1);
+}
+
 /* SECCION CONTACTO */
 
 .contacto{
@@ -664,9 +672,11 @@ footer{
     width: 100%;
     height: 100%;
 }
+
 footer .redes{
     margin-bottom: 20px;
 }
+
 footer .redes a{
     color: #fff;
     display: inline-block;
@@ -680,6 +690,7 @@ footer .redes a{
     font-size: 20px;
     transition: .3s;
 }
+
 footer .arriba{
     display: block;
     width: 50px;
@@ -693,4 +704,76 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+
+/* SECCION RESPONSIVE */
+
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
 }
